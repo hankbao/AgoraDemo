@@ -48,7 +48,7 @@ public slots:
 private:
     friend class AgoraRtcEngineEvent;
 private:
-    std::unique_ptr<agora::rtc::IRtcEngine> m_rtcEngine;
+    agora::util::AutoPtr<agora::rtc::IRtcEngine> m_rtcEngine;
     std::unique_ptr<agora::rtc::IRtcEngineEventHandler> m_eventHandler;
 };
 
